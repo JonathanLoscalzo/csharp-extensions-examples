@@ -1,5 +1,7 @@
 ## USE
-When an instance method would introduce a dependency on some type, but such a dependency would break dependency management rules. For example, a dependency from String to System.Uri is probably not desirable, and so String.ToUri() instance method returning System.Uri would be the wrong design from a dependency management perspective. A static extension method Uri.ToUri(this string str) returning System.Uri would be a much better design.
+When an instance method would introduce a dependency on some type, but such a dependency would break dependency management rules. 
+
+For example, a dependency from String to System.Uri is probably not desirable, and so String.ToUri() instance method returning System.Uri would be the wrong design from a dependency management perspective. A static extension method Uri.ToUri(this string str) returning System.Uri would be a much better design.
 
 ## Run
 dotnet restore && dotnet run
